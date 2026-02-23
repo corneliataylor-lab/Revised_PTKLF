@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PTKLF Foundation Coverage by LMA Form (Rebalanced v4)</title>
+<title>PTKLF Foundation Coverage by LMA Form (v5 — Google Doc Current)</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background: #fff; color: #1E293B; }
@@ -154,84 +154,76 @@ const items3XX = [
 // Note: Doc has two items numbered 12; displayed as 12a/12b here
 // ══════════════════════════════════════════════════════════════════
 const items4XX = [
-  // ── RECEPTIVE LANGUAGE (11) ──
-  { item: 1, diff: -3.5, floor: true, foundations: ["LL 1.8 Conversations"],
+  { item: 1, diff: -3.5, floor: true, foundations: ["No PTKLF Match"],
     text: "Shows joint attention (for example, looks at the same object as a caregiver, looks back at the caregiver for information)." },
   { item: 2, diff: -2.5, floor: true, foundations: ["No PTKLF Match"],
-    text: "Follows a simple direction given in words and/or signs (for example, a caregiver says or signs \u201CGive me the ball\u201D and the child gives it, or \u201CCome here\u201D and the child comes)." },
+    text: "Follows a simple direction given in words and/or signs (for example, a caregiver says or signs “Give me the ball” and the child gives it, or “Come here” and the child comes)." },
   { item: 3, diff: -3.5, floor: true, foundations: ["LL 1.8 Conversations"],
-    text: "Attends to an adult or peer who is communicating with them during classroom activities or group time (for example, watches the face or hands of a teacher or classmate who is talking or signing)." },
+    text: "Attends to an adult or peer who is communicating with them during classroom activities or group time (for example, watches the face or hands of a teacher or classmate who is talking or signing, turns toward a speaker or signer during circle time, or maintains visual attention during a short group activity)." },
   { item: 4, diff: -1.5, floor: true, foundations: ["LL 1.1 Vocabulary"],
-    text: "Understands words and/or signs for common objects, actions, and people used in everyday classroom routines (for example, responds appropriately when a teacher says or signs \u201Cshoes,\u201D \u201Csit,\u201D \u201Ceat\u201D)." },
-  { item: 5, diff: -0.5, floor: false, foundations: ["No PTKLF Match"],
-    text: "Follows a simple two-step direction given in spoken or signed language (for example, \u201CGet your coat and come here\u201D or \u201CPut the book on the shelf and sit down\u201D)." },
+    text: "Understands words and/or signs for common objects, actions, and people used in everyday classroom routines (for example, responds appropriately when a teacher says or signs “shoes,” “sit,” “eat,” or a classmate’s name during daily activities)." },
+  { item: 5, diff: -0.5, floor: true, foundations: ["No PTKLF Match"],
+    text: "Follows a simple two-step direction given in spoken or signed language (for example, “Get your coat and come here” or “Put the book on the shelf and sit down”)." },
   { item: 6, diff: 0.5, floor: false, foundations: ["LL 1.5 Questions", "LL 1.7 Explanations"],
-    text: "When asked a simple who, what, or where question about something nearby, answers using words, signs, or gestures." },
+    text: "When asked a simple who, what, or where question about something nearby, answers using words, signs, or gestures (for example, at snack time when two choices are on the table a teacher asks “What do you want?” and the child names one, or when asked “Where is your cup?” the child points to it)." },
   { item: 7, diff: 0.0, floor: false, foundations: ["LL 1.1 Vocabulary", "LL 1.3 Size & Location"],
-    text: "Understands simple describing words and/or signs for size, color, or other features (for example, when asked \u201CWhich one is big?\u201D the child points to the right picture)." },
+    text: "Understands simple describing words and/or signs for size, color, or other features (for example, while reading an opposites book a teacher asks “Which one is big?” and the child points to the right picture, or when asked to get the red paint the child picks the right color)." },
   { item: 8, diff: 1.95, floor: false, foundations: ["LL 1.3 Size & Location"],
-    text: "In ASL, follows directions that use spatial placement or classifier location to show where something goes. In spoken English, follows directions that use position words (for example, places a block above a line when asked)." },
+    text: "In ASL, follows directions that use spatial placement or classifier location to show where something goes (for example, places an object in the correct location when shown a classifier indicating above, below, or behind). In spoken English, follows directions that use position words (for example, places a block above a line when asked, or stands behind a chair when told)." },
   { item: 9, diff: 1.0, floor: false, foundations: ["LL 1.2 Categories"],
-    text: "When a teacher asks which item does not belong to a named category and shows a group of objects or pictures, the child finds the one that does not belong." },
+    text: "When a teacher asks which item does not belong to a named category and shows a group of objects or pictures, the child finds the one that does not belong (for example, the teacher asks “Which one is not an animal?” and shows the child a picture of a dog, a cat, a fish, and a shoe, and the child points to the shoe)." },
   { item: 10, diff: 2.5, floor: false, foundations: ["LL 1.4 Grammar"],
-    text: "In ASL, follows directions that use temporal sequencing or conditional structures. In spoken English, follows directions that use words like \u201Cif,\u201D \u201Cbefore,\u201D \u201Cafter,\u201D or \u201Cbecause.\u201D" },
+    text: "In ASL, follows directions that use temporal sequencing or conditional structures (for example, correctly responds to a signed sequence meaning “Before you go outside, put on your coat”). In spoken English, follows directions that use words like “if,” “before,” “after,” or “because” (for example, correctly responds to “If it’s raining, we’ll stay inside”)." },
   { item: 11, diff: 3.0, floor: false, foundations: ["LL 3.2 Stories", "LL 1.7 Explanations"],
-    text: "Answers a question about something that was just said or read by putting two ideas together (for example, \u201CWhat\u2019s going to happen to the bear?\u201D \u2014 \u201CHe\u2019s gonna get wet\u201D)." },
-
-  // ── EXPRESSIVE LANGUAGE (9) ──
-  // Note: Google Doc has two items numbered "12" — using 12a/12b labels
-  { item: "12a", diff: -2.5, floor: true, foundations: ["LL 1.5 Questions"],
-    text: "Uses a few words, signs, or gestures to let others know what they want (for example, signs MILK when thirsty, or pulls a teacher\u2019s hand toward the block shelf and says \u201CBlocks!\u201D)." },
-  { item: "12b", diff: 0.21, floor: false, foundations: ["LL 1.4 Grammar"],
-    text: "Uses 4\u20138 word and/or sign sentences." },
+    text: "When asked a question about a story, connects two pieces of information to form an answer (for example, when asked ‘What will happen to the bear?’ responds ‘He’ll get wet because it’s raining’ or signs BEAR GET-WET RAIN)." },
+  { item: 12, diff: -2.5, floor: true, foundations: ["LL 1.5 Questions"],
+    text: "Uses a few words, signs, or gestures to let others know what they want (for example, signs MILK when thirsty, or pulls a teacher’s hand toward the block shelf and says “Blocks!”)." },
+  { item: 13, diff: 0.21, floor: false, foundations: ["LL 1.4 Grammar"],
+    text: "Uses 4–8 word and/or sign sentences." },
   { item: 14, diff: 0.5, floor: false, foundations: ["LL 1.5 Questions"],
     text: "Asks questions using words, signs, and/or gestures to find out information." },
   { item: 15, diff: 3.44, floor: false, foundations: ["LL 1.4 Grammar", "LL 1.6 Narratives"],
     text: "Talks or signs about what they will do later, tomorrow, or in the future." },
   { item: 16, diff: 0.56, floor: false, foundations: ["LL 1.6 Narratives"],
-    text: "In ASL, uses body position and eye direction to show meaning. In spoken English, uses voice and expression to show meaning (for example, raises voice at the end to ask a question, or whispers during a pretend game to show a secret)." },
+    text: "In ASL, uses body position and eye direction to show meaning (for example, shifts body to one side and then the other to show two characters talking, or looks toward a classmate to show who they are talking about). In spoken English, uses voice and expression to show meaning (for example, raises voice at the end to ask a question, or whispers during a pretend game to show a secret)." },
   { item: 17, diff: 2.85, floor: false, foundations: ["LL 1.4 Grammar"],
-    text: "Uses \u201Cbecause,\u201D \u201Cwhen,\u201D \u201Cif,\u201D and \u201Cso\u201D to connect ideas (for example, says \u201CI can\u2019t play because I have to eat first\u201D)." },
+    text: "Uses “because,” “when,” “if,” and “so” to connect ideas (for example, says ‘I can’t play because I have to eat first’)." },
   { item: 18, diff: 2.3, floor: false, foundations: ["LL 1.6 Narratives"],
     text: "Uses words and/or signs to tell a story with clear beginning, middle, and end." },
   { item: 19, diff: 2.85, floor: false, foundations: ["LL 1.7 Explanations"],
-    text: "Uses words and/or signs to explain why something happened or why they want something, giving two or more reasons." },
+    text: "Uses words and/or signs to explain why something happened or why they want something, giving two or more reasons (for example, “I don’t want to go outside because it’s cold and because I want to finish my picture”)." },
   { item: 20, diff: 3.24, floor: false, foundations: ["LL 1.8 Conversations"],
     text: "Maintains a conversation for 7 or more turns, adding follow-up questions, new information, and fixes when misunderstood." },
-
-  // ── LITERACY (8) ──
   { item: 21, diff: -1.04, floor: true, foundations: ["LL 3.1 Literacy Interest"],
     text: "Enjoys being read to (for example, leans in to look at the pictures, asks for a favorite book again, or laughs at the funny parts)." },
   { item: 22, diff: -0.25, floor: false, foundations: ["LL 2.7 Print Conventions"],
     text: "Shows understanding of how books and print work (for example, turning pages one at a time, or following English print from left to right and top to bottom)." },
   { item: 23, diff: 0.25, floor: false, foundations: ["LL 2.6 Concepts of Print"],
-    text: "Recognizes familiar words and symbols in everyday surroundings (for example, recognizes words on signs, labels, or menus and communicates what they mean)." },
+    text: "Recognizes familiar words and symbols in everyday surroundings (for example, recognizes words on signs, labels, or menus and communicates what they mean using words, signs, or gestures)." },
   { item: 24, diff: 2.5, floor: false, foundations: ["LL 3.2 Stories"],
-    text: "Shares the main idea after a story is read aloud, signed, or shared, using words, signs, or gestures." },
+    text: "Shares the main idea after a story is read to them." },
   { item: 25, diff: 2.0, floor: false, foundations: ["LL 2.1 Isolating Initial Sounds", "LL 2.2 Recognizing and Blending Sounds"],
-    text: "Shares the first sound in a spoken word and/or the first handshape of a familiar sign, with adult support or the support of pictures or objects." },
+    text: "Shares the first sound in a spoken word and/or the first handshape of a familiar sign, with adult support or the support of pictures or objects (for example, a teacher holds up a picture of a fish and says “What sound does fish start with?” and the child says “/f/”, or a teacher shows a picture of a ball and the child produces the B handshape)." },
   { item: 26, diff: 3.0, floor: false, foundations: ["LL 2.2 Recognizing and Blending Sounds"],
-    text: "Blends individual sounds or syllables into spoken words and/or identifies words from fingerspelling, with adult support or the support of pictures or objects." },
+    text: "Blends individual sounds or syllables into spoken words and/or identifies words from fingerspelling, with adult support or the support of pictures or objects (for example, hears “d-o-g” and says “dog,” or sees D-O-G fingerspelled and signs DOG)." },
   { item: 27, diff: 3.0, floor: false, foundations: ["LL 3.2 Stories"],
-    text: "Retells a familiar story in the correct order, including the main characters, setting, and key events, using words, signs, and/or gestures." },
+    text: "Retells a familiar story in the correct order, including the main characters, setting, and key events, using words and/or signs." },
   { item: 28, diff: 3.5, floor: false, foundations: ["LL 4.2 Writing to Represent Sounds"],
-    text: "In ASL, writes a few letters to match the handshapes in fingerspelled words, with help from an adult. In spoken English, writes a few letters to match the sounds in words, with help from an adult." },
-
-  // ── VOCABULARY (7) ──
+    text: "In ASL, writes a few letters to match the handshapes in fingerspelled words, with help from an adult (for example, a teacher fingerspells C-A-T and the child writes C and T on their paper). In spoken English, writes a few letters to match the sounds in words, with help from an adult (for example, a teacher says “/k/…/æ/…/t/” and the child writes C and T)." },
   { item: 29, diff: -3.0, floor: true, foundations: ["LL 1.1 Vocabulary"],
     text: "Uses words and/or signs for actions (for example, eat, go, give, open, help), not just names of objects and people." },
   { item: 30, diff: -0.14, floor: false, foundations: ["LL 1.1 Vocabulary"],
-    text: "Uses words and/or signs to describe how things look, feel, taste, or sound (for example, touches a fuzzy blanket at rest time and says \u201Csoft,\u201D or tries a new food and signs YUCKY)." },
+    text: "Uses words and/or signs to describe how things look, feel, taste, or sound (for example, touches a fuzzy blanket at rest time and says “soft,” or tries a new food and signs YUCKY)." },
   { item: 31, diff: 0.75, floor: false, foundations: ["LL 1.3 Size & Location"],
-    text: "Uses words and/or signs to describe where things are (for example, tells a teacher \u201CMy backpack is in my cubby,\u201D or signs UNDER when asked where the ball went)." },
+    text: "Uses words and/or signs to describe where things are (for example, tells a teacher “My backpack is in my cubby,” or signs UNDER when asked where the ball went during outdoor play)." },
   { item: 32, diff: 1.26, floor: false, foundations: ["LL 1.3 Size & Location"],
-    text: "Uses words and/or signs to compare things (for example, holds up two paintings and says \u201CMine is bigger,\u201D or during snack tells a friend \u201CYou have more crackers than me\u201D)." },
+    text: "Uses words and/or signs to compare things (for example, holds up two paintings at the easel and says “Mine is bigger,” or during snack tells a friend “You have more crackers than me”)." },
   { item: 33, diff: 2.31, floor: false, foundations: ["LL 1.1 Vocabulary"],
     text: "Asks the meanings of words and/or signs." },
   { item: 34, diff: 2.75, floor: false, foundations: ["LL 1.1 Vocabulary"],
-    text: "Uses different words and/or signs to show differences in how actions are done (for example, says \u201CNow let\u2019s tiptoe!\u201D instead of just \u201Cwalk,\u201D or signs STOMP to show how a dinosaur moves)." },
+    text: "Uses different words and/or signs to show differences in how actions are done (for example, during a movement game says “Now let’s tiptoe!” instead of just “walk,” or signs STOMP to show how a dinosaur moves)." },
   { item: 35, diff: 2.5, floor: false, foundations: ["LL 1.2 Categories"],
-    text: "Sorts objects or pictures into groups and tells why they go together using words and/or signs (for example, puts all the toy animals in one pile and says \u201CThese are all animals\u201D)." },
+    text: "Sorts objects or pictures into groups and tells why they go together using words and/or signs (for example, puts all the toy animals in one pile and says ‘These are all animals’ or signs ANIMAL, SAME)." }
 ];
 
 // ══════════════════════════════════════════════════════════════════
@@ -380,9 +372,9 @@ function summaryHTML(label, sub, items, color, domains) {
 }
 
 let out = '';
-out += `<h1>PTKLF Foundation Coverage by LMA Form (Rebalanced)</h1>`;
-out += `<p class="subtitle">Preschool/Transitional Kindergarten Learning Foundations aligned to <strong>Rebalanced</strong> LMA Forms 3XX (3–4 yr, 36 items) and 4XX (4–5 yr, 35 items). Calibrated δ from N=74 field sample; 5 new items use handoff estimates (★).</p>`;
-out += `<p class="note">3XX rebalanced: −4 items (R6 no-PTKLF, E16 yes/no Qs, E19 wh-Qs redundant w/ R9, E21 ceiling), +5 items (R3 two-step, E13 conversations, E15 past events, L27 letter ID, V35 spatial vocab). Split: 9 easy / 11 mid / 16 hard (was 8/7/20). δ values are Rasch-calibrated (N=74) for kept items; handoff estimates for new items. Floor extensions (dashed border) target below PTKLF age range. Forms 0XX–2XX align to IT/LDF, not shown here.</p>`;
+out += `<h1>PTKLF Foundation Coverage by LMA Form</h1>`;
+out += `<p class="subtitle">Preschool/Transitional Kindergarten Learning Foundations aligned to current LMA Forms 3XX (3–4 yr, 36 items) and 4XX (4–5 yr, 35 items). Item text from Google Doc (Feb 23, 2026). Calibrated δ from N=74 field sample; new items use handoff estimates.</p>`;
+out += `<p class="note">3XX: 36 items (9 easy / 11 mid / 16 hard). 4XX: 35 items (7 easy / 11 mid / 17 hard). Known PTKLF gaps: LL 2.5 (Letter–Sound Correspondence), LL 4.3 (Dictating), LL 4.5 (Writing Own Name). Floor extensions (dashed border) target below PTKLF age range. δ values are Rasch-calibrated (N=74) for original items; handoff estimates for new 3XX items (#3, #13, #15, #26, #34). Forms 0XX–2XX align to IT/LDF, not shown here.</p>`;
 
 out += `<div class="legend">`;
 out += `<span class="legend-label">Item difficulty:</span>`;
